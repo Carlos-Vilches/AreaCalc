@@ -26,24 +26,11 @@ namespace areaCalc
                     area = Calc(baseFig);
                     Console.WriteLine(MsgArea + area);
                     break;
-
-                case 'b':
-                    Console.WriteLine(MsgInputBase);
-                    baseFig = Convert.ToInt32(Console.ReadLine());
-                    Console.WriteLine(MsgInputHeight);
-                    height = Convert.ToInt32(Console.ReadLine());
-                    area = Calc(baseFig, height);
-                    Console.WriteLine(MsgArea + area);
-                    break;
             }
         }
         public static int Calc(int baseFig)
         {
             return baseFig * baseFig;
-        }
-        public static int Calc(int baseFig, int height)
-        {
-            return baseFig * height;
         }
     }
 }
