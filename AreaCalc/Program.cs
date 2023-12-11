@@ -12,6 +12,11 @@ namespace areaCalc
             const string MsgArea = "Area: ";
 
             int area, baseFig, height;
+
+            const string MsgInputBase = "Introdueix la base de la figura";
+            const string MsgArea = "Area: ";
+
+            int area, baseFig;
             char figure;
 
             Console.WriteLine(MsgChooseFigure);
