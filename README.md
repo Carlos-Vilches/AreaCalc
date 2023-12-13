@@ -1,1 +1,7 @@
 ![alt text](https://github.com/Carlos-Vilches/AreaCalc/blob/master/img/CreateIssue.JPG)
+![alt text](https://github.com/Carlos-Vilches/AreaCalc/blob/master/img/Issues.JPG)
+![alt text](https://github.com/Carlos-Vilches/AreaCalc/blob/master/img/creatrBranch.JPG)
+![alt text](https://github.com/Carlos-Vilches/AreaCalc/blob/master/img/CommentSquare.JPG)
+![alt text](https://github.com/Carlos-Vilches/AreaCalc/blob/master/img/PRAccept.JPG)
+![alt text](https://github.com/Carlos-Vilches/AreaCalc/blob/master/img/IssueDone.JPG)
+![alt text](https://github.com/Carlos-Vilches/AreaCalc/blob/master/img/IssuesDone.JPG)
