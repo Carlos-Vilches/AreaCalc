@@ -2,7 +2,7 @@ using System;
 
 namespace areaCalc
 {
-    public class areaCalc
+    public class AreaCalc
     {
         static void Main()
         {
