@@ -1,11 +1,15 @@
+using areaCalc;
 namespace AreaCalcTest
 {
     [TestClass]
-    public class UnitTest1
+    public class AreaCalcTests
     {
         [TestMethod]
-        public void TestMethod1()
+        public void SquareTest()
         {
+            int num = 2, result;
+            result = AreaCalc.Calc(num)
+            Assert.AreEqual(4, result);
         }
     }
 }
