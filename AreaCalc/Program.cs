@@ -7,6 +7,7 @@ namespace areaCalc
         static void Main()
         {
             const string MsgChooseFigure = "De quina figura vols calcular l'area?\n a. quadrat\n b. rectangle\n c. cercle\n d. pentagon";
+            const string MsgFigureError = "Aquesta figura no esta disponible. Introdueix una altre:";
             const string MsgInputBase = "Introdueix la base de la figura: ";
             const string MsgInputRadius = "Introdueix el radi del cercle: ";
             const string MsgInputHeight = "Introdueix la altura: ";
@@ -19,9 +20,19 @@ namespace areaCalc
 
             int baseFig, height;
 
+            bool figError = false;
+
             Console.WriteLine(MsgChooseFigure);
-            figure = Convert.ToChar(Console.ReadLine());
-            figure = char.ToLower(figure);
+            do
+            {
+                if (figError)
+                {
+                    Console.WriteLine(MsgFigureError);
+                }
+                figure = Convert.ToChar(Console.ReadLine());
+                figure = char.ToLower(figure);
+                figError = ValidateFigure(figure);
+            } while (figError);
 
             switch (figure)
             {
@@ -60,6 +71,16 @@ namespace areaCalc
         public static float Calc(int radius, double PI)
         {
             return (float)(PI * (radius * radius));
+        }
+        public static float Calc(int baseFig, float apothem)
+        {
+            int sides = 5, Two = 2;
+            int perim = baseFig * sides;
+            return perim * apothem / Two;
+        }
+        public static bool ValidateFigure(char fig)
+        {
+            return !(fig == 'a' || fig == 'b' || fig == 'c' || fig == 'd');
         }
     }
 }
