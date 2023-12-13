@@ -27,12 +27,36 @@ namespace AreaCalcTest
             Assert.AreEqual(result, 78.53982f);
         }
         [TestMethod]
-        public void PentagonTets()
+        public void PentagonTest()
         {
             int baseNum = 4;
             float apothem = 2, result;
             result = AreaCalc.Calc(baseNum, apothem);
             Assert.AreEqual(result, 20);
+        }
+        [TestMethod]
+        public void ValidateFigureAMinus()
+        {
+            char fig = 'a';
+            bool result;
+            result = AreaCalc.ValidateFigure(fig); 
+            Assert.IsTrue(!result);
+        }
+        [TestMethod]
+        public void ValidateFigureAMayus()
+        {
+            char fig = 'a';
+            bool result;
+            result = AreaCalc.ValidateFigure(fig);
+            Assert.IsTrue(!result);
+        }
+        [TestMethod]
+        public void ValidateFigureF()
+        {
+            char fig = 'f';
+            bool result;
+            result = AreaCalc.ValidateFigure(fig);
+            Assert.IsFalse(!result);
         }
     }
 }
