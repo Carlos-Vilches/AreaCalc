@@ -11,7 +11,6 @@ namespace areaCalc
             const string MsgArea = "Area: ";
 
             int area, baseFig;
-
             char figure;
 
             Console.WriteLine(MsgChooseFigure);
