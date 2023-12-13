@@ -2,7 +2,7 @@ using System;
 
 namespace areaCalc
 {
-    public class areaCalc
+    public class AreaCalc
     {
         static void Main()
         {
@@ -39,13 +39,6 @@ namespace areaCalc
                     area = Calc(baseFig, height);
                     Console.WriteLine(MsgArea + area);
                     break;
-
-                case 'c':
-                    Console.WriteLine(MsgInputRadius);
-                    baseFig = Convert.ToInt32(Console.ReadLine());
-                    area = Calc(baseFig, PI);
-                    Console.WriteLine(MsgArea + area);
-                    break;
             }
         }
         public static int Calc(int baseFig)
@@ -55,10 +48,6 @@ namespace areaCalc
         public static int Calc(int baseFig, int height)
         {
             return baseFig * height;
-        }
-        public static float Calc(int radius, double PI)
-        {
-            return (float)(PI * (radius * radius));
         }
     }
 }
