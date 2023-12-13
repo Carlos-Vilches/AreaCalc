@@ -8,7 +8,7 @@ namespace AreaCalcTest
         public void SquareTest()
         {
             int num = 2, result;
-            result = AreaCalc.Calc(num)
+            result = AreaCalc.Calc(num);
             Assert.AreEqual(4, result);
         }
     }
