@@ -10,13 +10,14 @@ namespace areaCalc
             const string MsgFigureError = "Aquesta figura no esta disponible. Introdueix una altre:";
             const string MsgInputBase = "Introdueix la base de la figura: ";
             const string MsgInputRadius = "Introdueix el radi del cercle: ";
+            const string MsgInputApothem = "Introdueix l'apotema: ";
             const string MsgInputHeight = "Introdueix la altura: ";
             const string MsgArea = "Area: ";
             const double PI = 3.1415926535897931;
 
             char figure;
 
-            float area;
+            float area, apothem;
 
             int baseFig, height;
 
@@ -56,6 +57,15 @@ namespace areaCalc
                     Console.WriteLine(MsgInputRadius);
                     baseFig = Convert.ToInt32(Console.ReadLine());
                     area = Calc(baseFig, PI);
+                    Console.WriteLine(MsgArea + area);
+                    break;
+
+                case 'd':
+                    Console.WriteLine(MsgInputBase);
+                    baseFig = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine(MsgInputApothem);
+                    apothem = Convert.ToSingle(Console.ReadLine());
+                    area = Calc(baseFig, apothem);
                     Console.WriteLine(MsgArea + area);
                     break;
             }
