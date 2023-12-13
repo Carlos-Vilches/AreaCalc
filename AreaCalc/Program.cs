@@ -13,7 +13,6 @@ namespace areaCalc
             const string MsgInputApothem = "Introdueix l'apotema: ";
             const string MsgInputHeight = "Introdueix la altura: ";
             const string MsgArea = "Area: ";
-            const double PI = 3.1415926535897931;
 
             char figure;
 
@@ -56,7 +55,7 @@ namespace areaCalc
                 case 'c':
                     Console.WriteLine(MsgInputRadius);
                     baseFig = Convert.ToInt32(Console.ReadLine());
-                    area = Calc(baseFig, PI);
+                    area = Calc(baseFig, Math.PI);
                     Console.WriteLine(MsgArea + area);
                     break;
 
